@@ -1,9 +1,9 @@
 export const generateJPattern = (rows: number, cols: number): number[] => {
-  const pattern = Array(rows * cols).fill(0);
-  const centreX = Math.floor(cols / 2);
-  const centreY = Math.floor(rows / 2);
+  const pattern: number[] = Array(rows * cols).fill(0) as number[];
+  const centreX: number = Math.floor(cols / 2);
+  const centreY: number = Math.floor(rows / 2);
 
-  const jCoordinates = [
+  const jCoordinates: [number, number][] = [
     [centreX - 1, centreY],
     [centreX - 1, centreY + 1],
     [centreX, centreY + 1],

@@ -9,7 +9,7 @@ export const playGame = (
   cols: number,
   setHistory: React.Dispatch<React.SetStateAction<number[][]>>,
   setIsPlaying: React.Dispatch<React.SetStateAction<boolean>>,
-  interval: number = 250
+  interval = 250
 ) => {
   if (gameInterval !== null) return;
 
@@ -56,7 +56,7 @@ export const stepBackward = (
   if (history.length > 0) {
     const prevHistory = [...history];
     const lastGridState = prevHistory.pop();
-    setGridData(lastGridState || []);
+    setGridData(lastGridState ?? []);
     setHistory(prevHistory);
   }
 };
@@ -66,6 +66,6 @@ export const resetGame = (
   setHistory: React.Dispatch<React.SetStateAction<number[][]>>,
   history: number[][],
 ) => {
-  setGridData(history[0] || []);
+  setGridData(history[0] ?? []);
   setHistory([]);
 };

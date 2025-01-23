@@ -26,7 +26,7 @@ const Game = () => {
   return (
     <div className="flex items-center justify-around flex-col space-y-6 m-12">
       <div className="space-y-2 text-center">
-        <h1 className='font-bold text-3xl'>Conway's Game of Life</h1>
+        <h1 className='font-bold text-3xl'>Conway&apos;s Game of Life</h1>
         <p>Click on the squares to toggle</p>
       </div>
 
