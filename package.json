@@ -1,6 +1,6 @@
 {
-  "name": "portfolio",
-  "homepage": "https://jarsuu.github.io/portfolio",
+  "name": "conways-game-of-life",
+  "homepage": "https://jarsuu.github.io/conways-game-of-life",
   "private": true,
   "version": "0.0.0",
   "type": "module",
