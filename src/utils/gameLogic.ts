@@ -40,6 +40,10 @@ export const updateGrid = (gridData: number[], rows: number, cols: number): numb
         if (neighbourCount <= 1 || neighbourCount >= 4) {
           newGridData[currentCellIndex] = 0;
         }
+      } else {
+        if (neighbourCount === 3) {
+          newGridData[currentCellIndex] = 1;
+        }
       }
     }
   }

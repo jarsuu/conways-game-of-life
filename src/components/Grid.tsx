@@ -20,12 +20,12 @@ const Grid: React.FC<GridProps> = ({ rows, cols, cellSize, gridData, toggleCell 
       {gridData.map((cell, idx) => (
         <div
           key={idx}
-          className={`cursor-pointer border border-black ${cell === 1 ? "bg-black" : "bg-white"}`}
+          className={`cursor-pointer border border-neutral-400 ${cell === 1 ? "bg-black" : "bg-neutral-100"}`}
           style={{
             width: `${cellSize}px`,
             height: `${cellSize}px`
           }}
-          onClick={() => {toggleCell(Math.floor(idx / cols), idx % cols); console.log(Math.floor(idx / cols), idx % cols)}}>
+          onClick={() => {toggleCell(Math.floor(idx / cols), idx % cols)}}>
         </div>
       ))}
     </div>
