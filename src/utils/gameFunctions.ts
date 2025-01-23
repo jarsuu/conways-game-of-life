@@ -66,6 +66,8 @@ export const resetGame = (
   setHistory: React.Dispatch<React.SetStateAction<number[][]>>,
   history: number[][],
 ) => {
-  setGridData(history[0] ?? []);
-  setHistory([]);
+  if (history.length > 0) {
+    setGridData(history[0]);
+    setHistory([]);
+  }
 };
