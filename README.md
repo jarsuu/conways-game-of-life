@@ -1,6 +1,9 @@
 # Conway's Game of Life
 A small demo of Conway's Game of Life.
 
+## Deployment
+Check it out **[here on Github Pages](https://jarsuu.github.io/conways-game-of-life/)**.
+
 ## Rules
 For a space that is populated:
 - Each cell with one or no neighbors dies, as if by solitude.
